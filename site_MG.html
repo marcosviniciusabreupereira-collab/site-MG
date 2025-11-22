@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mil Grau</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="site_MG.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo-box">
+                <img src="logo-milgrau.png" alt="Logo Mil Grau">
+                <h1>Mil Grau <br> Moda Esportiva</h1>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-box"></i> Pedidos</a></li>
+                    <li><a href="#"><i class="fas fa-tag"></i> Produtos</a></li>
+                    <li><a href="#"><i class="fas fa-handshake"></i> Serviços</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Config</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="top-actions">
+                    <div class="date-filter">
+                        <i class="fas fa-bell"></i>
+                        <select>
+                            <option value="30d">Últimos 30 Dias</option>
+                            <option value="7d">Últimos 7 Dias</option>
+                            <option value="m">Mês Atual</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="user-profile">
+                        <div class="user-avatar"></div>
+                        <div class="user-info">
+                            <small>Bem-vindo de volta!</small>
+                            <span>Ramon</span>
+                        </div>
+                        <i class="fas fa-cog settings-icon"></i>
+                        <i class="fas fa-sun theme-toggle"></i>
+                    </div>
+                </div>
+            </header>
+
+            <h2>Dashboard</h2>
+
+            <section class="metrics-grid">
+                
+                <div class="metric-card bg-purple-1">
+                    <i class="fas fa-shopping-bag icon"></i>
+                    <span class="value">R$ 4045,70</span>
+                    <span class="label">Total de Vendas (Mês)</span>
+                </div>
+                
+                <div class="metric-card bg-purple-2">
+                    <i class="fas fa-arrow-alt-circle-right icon"></i>
+                    <span class="value">R$ 2310,00</span>
+                    <span class="label">Total de Entradas (Mês)</span>
+                </div>
+
+                <div class="metric-card bg-green">
+                    <i class="fas fa-warehouse icon"></i>
+                    <span class="value">R$ 17340,00</span>
+                    <span class="label">Valor Total do Estoque</span>
+                </div>
+
+                <div class="metric-card bg-red">
+                    <i class="fas fa-exclamation-triangle icon"></i>
+                    <span class="value">39 Itens</span>
+                    <span class="label">Itens com Estoque Baixo</span>
+                </div>
+
+                <div class="metric-card bg-blue">
+                    <i class="fas fa-sync-alt icon"></i>
+                    <span class="value">30 Dias</span>
+                    <span class="label">Giro de Estoque (Dias)</span>
+                </div>
+
+                <div class="metric-card bg-orange-1">
+                    <i class="fas fa-cubes icon"></i>
+                    <span class="value">221 Itens</span>
+                    <span class="label">Quantidade Total do Estoque</span>
+                </div>
+
+                <div class="metric-card bg-pink">
+                    <i class="fas fa-chart-bar icon"></i>
+                    <span class="value">R$ 1.735,70</span>
+                    <span class="label">Lucro Bruto (Mês)</span>
+                </div>
+
+                <div class="metric-card bg-orange-2">
+                    <i class="fas fa-file-invoice icon"></i>
+                    <span class="value">12 Pedidos</span>
+                    <span class="label">Pedidos Pendentes (Mês)</span>
+                </div>
+
+            </section>
+
+            <section class="charts-grid">
+                
+                <div class="chart-box">
+                    <h3>TOP 5 Produtos Mais Vendidos</h3>
+                    <div class="chart-placeholder bar-chart">
+                        <p>Gráfico de Barras (simulado)</p>
+                    </div>
+                </div>
+
+                <div class="chart-box">
+                    <h3>Tendência de Vendas (Últimos 30 Dias)</h3>
+                    <div class="chart-placeholder line-chart">
+                        <p>Gráfico de Linha (simulado)</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="site_MG.js"></script>
+</body>
+</html>
